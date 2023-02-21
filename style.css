@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+p,
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1em;
+}
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 20px black;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.2rem;
+}
+header div:first-child {
+  float: left;
+}
+header div:last-child {
+  float: right;
+}
+b {
+  font-weight: bolder;
+}
+
+section {
+  margin: 1.5rem auto;
+  max-width: min(94%, 93.75rem);
+}
+
+.baner {
+  margin: auto;
+  position: relative;
+  max-width: 93.75rem;
+}
+.baner img {
+  vertical-align: middle;
+}
+.baner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  text-align: center;
+}
+.baner h1 span:first-child {
+  opacity: 80%;
+}
+
+.projects h3,
+.about h3:first-child,
+.contact h3 {
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.projects p {
+  position: absolute;
+  padding: 0.3rem 0.7rem;
+}
+
+.about .card {
+  filter: grayscale(75%);
+  margin: 2em 0;
+}
+.about span {
+  display: block;
+  opacity: 0.6;
+  margin: 1.5rem 0;
+}
+.about button {
+  color: #000;
+  background-color: #f1f1f1;
+  border: none;
+  width: 100%;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+.about button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.contact {
+  margin-bottom: 0.2em;
+}
+.contact form > * {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+.contact button {
+  width: auto;
+  border: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  background-color: #000;
+  padding: 1.5rem 0;
+}
+footer p {
+  color: #ccc;
+  text-align: center;
+}
+
+.conteiner {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card {
+  flex-basis: 25%;
+  padding: 0.2rem 0.4rem;
+}
+.pading {
+  padding: 0.5rem 1rem;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.text_block {
+  color: aliceblue;
+  background-color: black;
+}
+
+@media (max-width: 950px) {
+  .card {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex-basis: 100%;
+  }
+  .nav {
+    display: none;
+  }
+}
